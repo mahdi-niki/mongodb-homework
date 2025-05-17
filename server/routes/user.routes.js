@@ -1,12 +1,12 @@
 
 const express = require("express");
-const Router = express.Router();
+const router = express.Router();
 const validateMember = require("../middleware/validateUser");
 const { getMembers, addMember, deleteMember } = require("../controllers/user.controller");
 
 
-Router.get("/",getMembers)
-Router.post("/",validateMember,addMember)
-Router.delete("/:id",deleteMember)
+router.get("/",getMembers)
+router.post("/",validateMember,addMember)
+router.delete("/:id",deleteMember)
 
-module.exports = Router;
+module.exports = router;

@@ -9,7 +9,7 @@ const getMembers = async (req, res) => {
   }
 };
 const addMember = async (req, res) => {
-  const { name, age,exp, type, qualification } = req.body;
+  const { name, age,gender,exp, type, qualification } = req.body;
   const member = new user({
     name,
     age,
