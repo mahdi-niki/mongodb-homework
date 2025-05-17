@@ -40,3 +40,4 @@ const deleteMember = async (req, res) => {
 
 
 
+module.exports = {getMembers, addMember, deleteMember};

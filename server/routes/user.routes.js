@@ -1,6 +1,6 @@
 
-const express = require("express");
-const router = express.Router();
+const { Router } = require("express")
+const router = Router();
 const validateMember = require("../middleware/validateUser");
 const { getMembers, addMember, deleteMember } = require("../controllers/user.controller");
 
